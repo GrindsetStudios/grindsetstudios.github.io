@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/img/icon/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Grindset Studios</title>
+</head>
+
+<body>
+    <header class="menu-header">
+        <div class="container">
+            <div class="company_logo" onclick="scrollToTarget('home')">Grindset Studios</div>
+            <div class="menu-header__info-wrapper">
+                <ul class="menu-list">
+                    <li class="menu-list_item" onclick="scrollToTarget('new-game')">New Game</li>
+                    <li class="menu-list_item" onclick="scrollToTarget('coming-soon')">Coming Soon</li>
+                    <li class="menu-list_item" onclick="scrollToTarget('our-games')">Our Games</li>
+                    <li class="menu-list_item" onclick="scrollToTarget('about-us')">About Us</li>
+                </ul>
+                <div class="social-networks_wrapper"> <a href="/#about">
+                        <picture>
+                            <source srcset="img/description/facebook-f.svg" type="image/webp"><img
+                                src="img/description/facebook-f.svg" alt="Facebook">
+                        </picture>
+                    </a> <a href="/#about">
+                        <picture>
+                            <source srcset="img/description/telegram-alt.svg" type="image/webp"><img
+                                src="img/description/telegram-alt.svg" alt="Telegram">
+                        </picture>
+                    </a>
+                </div>
+            </div>
+            <div class="burger-button_wrapper">
+                <button class="burger-button" onclick="visibleHeaderModal()">
+                    <span class="burger"> <span class="burger__line"></span> <span class="burger__line"></span> <span
+                            class="burger__line"></span> </span> </button>
+            </div>
+        </div>
+        <div class="header-mobile" style="top: -110vh;">
+            <div style="display: flex; flex-direction: column; align-items: center">
+                <ul class="menu-list">
+                    <li class="menu-list_item" onclick="scrollToTarget('new-game'), visibleHeaderModal()">New Game</li>
+                    <li class="menu-list_item" onclick="scrollToTarget('coming-soon'), visibleHeaderModal()">Coming Soon
+                    </li>
+                    <li class="menu-list_item" onclick="scrollToTarget('our-games'), visibleHeaderModal()">Our Games
+                    </li>
+                    <li class="menu-list_item" onclick="scrollToTarget('about-us'), visibleHeaderModal()">About Us</li>
+                </ul>
+                <div class="social-networks_wrapper" style="margin-top: 15px"> <a href="/#about">
+                        <picture>
+                            <source srcset="img/description/facebook-f.svg" type="image/webp"><img
+                                src="img/description/facebook-f.svg" alt="Facebook">
+                        </picture>
+                    </a> <a href="/#about">
+                        <picture>
+                            <source srcset="img/description/telegram-alt.svg" type="image/webp"><img
+                                src="img/description/telegram-alt.svg" alt="Telegram">
+                        </picture>
+                    </a> </div>
+            </div>
+        </div>
+    </header>
+    <section class="content">
+        <div class="container-wrapper">
+            <div class="container" id="home">
+                <div class="content__inner-wrapper">
+                    <h3 class="content__info">Masterpieces Take Time, We Take Our Time.</h3>
+                    <picture>
+                        <source srcset="img/description/hero.webp" type="image/webp"><img class="content__character"
+                            alt="Character" src="img/description/hero.webp">
+                    </picture>
+                </div>
+            </div>
+            <picture>
+                <source srcset="img/BG-elements/item_10.webp" type="image/webp"><img
+                    class="background-elements bg-item_10" src="img/BG-elements/item_10.webp" alt="el">
+            </picture>
+        </div>
+        <div class="container-wrapper">
+            <div class="container" style="display: flex; padding: 0 50px;" id="new-game">
+                <div class="content__inner-wrapper new-game">
+                    <div class="content__img_wrapper">
+                        <picture>
+                            <source srcset="img/description/mockup-smartphone.webp" type="image/webp"><img
+                                class="content__mockup-smartphone" src="img/description/mockup-smartphone.webp"
+                                alt="mockup-smartphone">
+                        </picture>
+                        <picture>
+                            <source srcset="img/description/Screenshot1.webp" type="image/webp"><img
+                                class="content__screenshot" src="img/description/Screenshot1.webp" alt="Screenshot">
+                        </picture>
+                        <picture>
+                            <source srcset="img/BG-elements/item_02.webp" type="image/webp"><img
+                                class="background-elements bg-item_02" src="img/BG-elements/item_02.webp" alt="el">
+                        </picture>
+                    </div>
+                    <div class="content__inner">
+                        <div>
+                            <h2 class="content__inner_title" style="color: #F2CEAE">New Game</h2>
+                            <h2 class="content__inner_title_game">Find It! 100 Cats & Items!</h2> <span
+                                class="content__inner_subtitle">Game Puzzle</span>
+                            <p class="content__inner_info">Dive into a world where 100 clever cats and countless
+                                objects await your keen eye! Sharpen your vision for an extraordinary seek and find
+                                adventure, where every corner conceals a furry friend, a curious item, or a secret eye.
+                                This hidden object game challenges you to spot the unseen and master the art of
+                                observation in beautifully crafted levels!
+                            </p>
+                            <div class="content__platform">
+                                <picture class="content__platform_icon">
+                                    <source srcset="img/description/gamepad.svg" type="image/webp">
+                                    <img src="img/description/gamepad.svg" alt="gamepad">
+                                </picture>
+                                <span class="content__platform_list">Platform: Android</span>
+                            </div>
+                        </div>
+                        <div style="display: flex; margin-top: 20px"> <a
+                                href="https://play.google.com/store/apps/details?id=com.GrindsetStudios.FindCats">
+                                <picture>
+                                    <source srcset="img/description/google-play-badge.webp" type="image/webp"><img
+                                        style="width: 142px; height: 40px; margin-right: 30px"
+                                        src="img/description/google-play-badge.webp" alt="google">
+                                </picture>
+                            </a></div>
+                    </div>
+                </div>
+            </div>
+            <picture>
+                <source srcset="img/BG-elements/item_01.webp" type="image/webp"><img
+                    class="background-elements bg-item_01" src="img/BG-elements/item_01.webp" alt="el">
+            </picture>
+        </div>
+        <div class="container-wrapper">
+            <div class="container" style="display: flex; padding: 0 50px;" id="coming-soon">
+                <div class="content__inner-wrapper">
+                    <div class="content__inner">
+                        <div>
+                            <h2 class="content__inner_title content-title" style="text-align: inherit">Coming Soon
+                            </h2>
+                            <h2 class="content__inner_title_game">Triangle Alien</h2> <span
+                                class="content__inner_subtitle">Arcade</span>
+                            <p class="content__inner_info"> Soar through challenges, collecting sweet cosmic treats!
+                                Embark on an industrious journey through the cosmos, a arcade game that tests your
+                                skills with just one finger!🚀 </p>
+                            <div class="content__platform">
+                                <picture class="content__platform_icon">
+                                    <source srcset="img/description/gamepad.svg" type="image/webp"><img
+                                        src="img/description/gamepad.svg" alt="gamepad">
+                                </picture>
+                                <span class="content__platform_list">Platform: Android</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content__img_wrapper">
+                        <picture>
+                            <source srcset="img/description/mockup-smartphone.webp" type="image/webp"><img
+                                class="content__mockup-smartphone" src="img/description/mockup-smartphone.webp"
+                                alt="mockup-smartphone">
+                        </picture>
+                        <picture>
+                            <source srcset="img/description/Screenshot.webp" type="image/webp"><img
+                                class="content__screenshot" src="img/description/Screenshot.webp" alt="Screenshot">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <picture>
+                <source srcset="img/BG-elements/item_04.webp" type="image/webp"><img
+                    class="background-elements bg-item_04" src="img/BG-elements/item_04.webp" alt="el">
+            </picture>
+            <picture>
+                <source srcset="img/BG-elements/item_03.webp" type="image/webp"><img
+                    class="background-elements bg-item_03" src="img/BG-elements/item_03.webp" alt="el">
+            </picture>
+        </div>
+        <div class="container-wrapper">
+            <div class="container" data-block-categories="about" id="our-games">
+                <div class="content__inner-wrapper" style="display: block; padding-bottom: 80px">
+                    <h2 class="content-title">Our Games</h2>
+                    <div class="separation"></div>
+                    <p style="font-size: 28px; text-align: center">Grinding Perfection into Every Pixel</p>
+                </div>
+                <div class="content-games__wrapper">
+                    <div class="content-games our-games">
+                        <div class="content__inner-wrapper">
+                            <div class="content__img_wrapper content-games__img_wrapper">
+                                <picture>
+                                    <source srcset="img/description/mockup-smartphone.webp" type="image/webp"><img
+                                        class="content__mockup-smartphone" src="img/description/mockup-smartphone.webp"
+                                        alt="mockup-smartphone">
+                                </picture>
+                                <picture>
+                                    <source srcset="img/description/Screenshot1.webp" type="image/webp"><img
+                                        class="content__screenshot" style="margin: 9px"
+                                        src="img/description/Screenshot1.webp" alt="Screenshot">
+                                </picture>
+                            </div>
+                            <div class="content-games__inner-wrap">
+                                <div>
+                                    <h2 class="content-games__inner-wrap-title">Find It! 100 Cats & Items!</h2>
+                                    <p class="content-games__inner-wrap-subtitle">Game Puzzle</p>
+                                    <p class="content-games__inner-wrap-description">Dive into a world where 100 clever
+                                        cats and countless
+                                        objects await your keen eye! Sharpen your vision for an extraordinary seek and
+                                        find
+                                        adventure, where every corner conceals a furry friend, a curious item, or a
+                                        secret eye.
+                                        This hidden object game challenges you to spot the unseen and master the art of
+                                        observation in beautifully crafted levels!</p>
+                                    <div class="content-games__inner-wrap-platform">
+                                        <picture>
+                                            <source srcset="img/description/gamepad.svg" type="image/webp">
+                                            <img style="width: 24px; height: 14px" src="img/description/gamepad.svg"
+                                                alt="gamepad">
+                                        </picture>
+                                        <span class="content-games__inner-wrap-platform-list">Platform: Android</span>
+                                    </div>
+                                </div>
+                                <div class="content-games__inner-wrap-content-play">
+                                    <p>Play now:</p>
+                                    <a
+                                        href="https://play.google.com/store/apps/details?id=com.GrindsetStudios.FindCats">
+                                        <picture>
+                                            <source srcset="img/description/google-play-badge.webp" type="image/webp">
+                                            <img class="content-games__inner-wrap-links-button"
+                                                style="margin-right: 15px; margin-top: 15px"
+                                                src="img/description/google-play-badge.webp" alt="google">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <picture>
+                <source srcset="img/BG-elements/item_09.webp" type="image/webp"><img
+                    class="background-elements bg-item_09" src="img/BG-elements/item_09.webp" alt="el">
+            </picture>
+        </div>
+        <picture>
+            <source srcset="img/BG-elements/item_08.webp" type="image/webp"><img class="background-elements bg-item_08"
+                src="img/BG-elements/item_08.webp" alt="el">
+        </picture>
+        <picture>
+            <source srcset="img/BG-elements/item_06.webp" type="image/webp"><img class="background-elements bg-item_06"
+                src="img/BG-elements/item_06.webp" alt="el">
+        </picture>
+        </div>
+        <div class="container-wrapper">
+            <div class="container" id="about-us">
+                <div class="content__inner-wrapper" style="display: block">
+                    <h2 class="content-title">About Us</h2>
+                    <div class="separation"></div>
+                    <div class="content-about">
+                        <p>Hello there! We're Grindset Studios, a small indie studio of two people with big ambitions.
+                        </p>
+                        <p>Who are we? An experienced Unity developer and a talented designer. Together, we create games
+                            that we ourselves want to play.</p>
+                        <p>Our approach is simple:</p>
+                        <ol>
+                            <li>Quality above all. We don't release a game until it meets our high standards.</li>
+                            <li>Attention to detail. Every pixel, every mechanic - everything matters.</li>
+                            <li>Passion for perfection. We're constantly learning and improving.</li>
+                        </ol>
+                        <p>Yes, we're a small team. But that's our advantage. We can give maximum attention to every
+                            aspect of the game, without compromising.</p>
+                        <p>Our goal is to create games that you'll remember for a long time. Games with soul, character,
+                            and attention to the little things.</p>
+                    </div>
+                </div>
+            </div>
+            <picture>
+                <source srcset="img/BG-elements/item_07.webp" type="image/webp"><img
+                    class="background-elements bg-item_07" src="img/BG-elements/item_07.webp" alt="el">
+            </picture>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__left-wrap">
+                <div class="company_logo" style="margin: 0;" onclick="scrollToTarget('home')">Grindset Studios</div>
+                <div class="social-networks_wrapper" style="margin: 20px 0"> <a href="/#about">
+                        <picture>
+                            <source srcset="img/description/facebook-f.svg" type="image/webp"><img
+                                src="img/description/facebook-f.svg" alt="Facebook">
+                        </picture>
+                    </a> <a href="/#about">
+                        <picture>
+                            <source srcset="img/description/telegram-alt.svg" type="image/webp"><img
+                                src="img/description/telegram-alt.svg" alt="Telegram">
+                        </picture>
+                    </a> </div>
+                <a href="privacy.html" class="privacy-policy">Privacy Policy</a>
+                <p class="copyright">© 2024 Grindset Studios. All rights reserved.</p>
+            </div>
+            <div>
+                <div class="footer__right-wrap">
+                    <div class="footer__wrapper-info">
+                        <h3 class="footer__right-wrap_title">Our Games</h3>
+                        <ul class="menu-list">
+                            <li class="menu-list_item"><a
+                                    href="https://play.google.com/store/apps/details?id=com.GrindsetStudios.FindCats">Find
+                                    It! 100 Cats & Items!</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__wrapper-info">
+                        <h3 class="footer__right-wrap_title">Navigation</h3>
+                        <ul class="menu-list">
+                            <li class="menu-list_item" onclick="scrollToTarget('new-game')">New Game</li>
+                            <li class="menu-list_item" onclick="scrollToTarget('coming-soon')">Coming Soon</li>
+                            <li class="menu-list_item" onclick="scrollToTarget('our-games')">Our Games</li>
+                            <li class="menu-list_item" onclick="scrollToTarget('about-us')">About Us</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__contacts"> <a href="mailto:grindset.studios@gmail.com">grindset.studios@gmail.com</a> </div>
+            </div>
+        </div>
+        <picture>
+            <source srcset="img/BG-elements/item_05.webp" type="image/webp"><img class="background-elements bg-item_05"
+                src="img/BG-elements/item_05.webp" alt="el">
+        </picture>
+        <picture>
+            <source srcset="img/BG-elements/item_14.webp" type="image/webp"><img class="background-elements bg-item_14"
+                src="img/BG-elements/item_14.webp" alt="el">
+        </picture>
+    </footer>
+    <script src="scripts/script.js" defer></script>
+</body>
+
+</html>
