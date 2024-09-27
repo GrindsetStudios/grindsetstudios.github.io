@@ -315,7 +315,7 @@ body::-webkit-scrollbar {
 
 .content-about p {
   padding: 20px 0;
-  font-size: 25px;
+  font-size: 20px;
   text-align: justify;
 }
 
@@ -325,7 +325,7 @@ body::-webkit-scrollbar {
 }
 
 .content-about li {
-  font-size: 25px;
+  font-size: 20px;
   text-align: justify;
 }
 
