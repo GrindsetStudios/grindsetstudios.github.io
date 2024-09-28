@@ -229,12 +229,11 @@ img {
 }
 
 * {
-  scrollbar-color: #bfd2ff transparent;
   scrollbar-width: thin;
+  scrollbar-color: #f6ff00 black;
 }
 
 html {
-  scrollbar-width: none;
   min-height: 100%;
   height: auto;
 }
@@ -254,27 +253,6 @@ body {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #2a1a40), color-stop(12%, #993447), color-stop(35%, #e7af06), color-stop(64%, #f25c5c), color-stop(77%, #bf4158), color-stop(89%, #2a1a40));
   background: -o-linear-gradient(top, #2a1a40 0, #993447 12%, #e7af06 35%, #f25c5c 64%, #bf4158 77%, #2a1a40 89%);
   background: linear-gradient(180deg, #2a1a40 0, #993447 12%, #e7af06 35%, #f25c5c 64%, #bf4158 77%, #2a1a40 89%);
-}
-
-/* Только внешний скролл */
-
-body::-webkit-scrollbar {
-  background-color: black;
-}
-
-/* Весь скролл */
-
-::-webkit-scrollbar {
-  width: 8px;
-  height: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #FFC000;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background-color: #993447;
 }
 
 .container-wrapper {
@@ -619,7 +597,9 @@ body::-webkit-scrollbar {
   min-width: 186px !important;
 }
 
-.content-games__img_wrapper .content__screenshot {margin: 10.3px !important;}
+.content-games__img_wrapper .content__screenshot {
+  margin: 10.3px !important;
+}
 
 .content__inner-wrapper .content__img_wrapper .content__mockup-smartphone {
   position: relative;
@@ -799,7 +779,6 @@ body::-webkit-scrollbar {
 }
 .footer__contacts a {
   font-size: 12px;
-  /* bottom: 0; */
 }
 
 .footer__contacts a:not(:last-child) {
@@ -868,7 +847,12 @@ body::-webkit-scrollbar {
   position: absolute;
 }
 
-.privacy-policy {bottom: 30px;position: absolute;font-size: 12px;text-decoration: revert;}
+.privacy-policy {
+  bottom: 30px;
+  position: absolute;
+  font-size: 12px;
+  text-decoration: revert;
+}
 
 @media screen and (max-width: 1100px) {
   .content-games.our-games .content__inner-wrapper {
