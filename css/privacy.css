@@ -3,6 +3,7 @@
 .container-wrapper {
   position: relative;
   min-height: 486px;
+  margin-top: 70px;
 }
 
 .menu-list_item a {

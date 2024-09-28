@@ -279,7 +279,7 @@ body::-webkit-scrollbar {
 
 .container-wrapper {
   position: relative;
-  min-height: max(500px, 70vh);
+  min-height: 730px;
 }
 
 .container {
@@ -315,7 +315,7 @@ body::-webkit-scrollbar {
 
 .content-about p {
   padding: 20px 0;
-  font-size: 20px;
+  font-size: 25px;
   text-align: justify;
 }
 
@@ -325,7 +325,7 @@ body::-webkit-scrollbar {
 }
 
 .content-about li {
-  font-size: 20px;
+  font-size: 25px;
   text-align: justify;
 }
 
@@ -598,16 +598,12 @@ body::-webkit-scrollbar {
   font-weight: bold;
   color: white;
   font-variant: petite-caps;
-  margin: auto 10% auto 0;
+  margin: 200px 10% auto 0;
 }
 
 .content__inner-wrapper .content__character {
-  width: 350px;
-  height: 350px;
-  margin-top: 75px;
-  -webkit-transform: rotate(12deg);
-      -ms-transform: rotate(12deg);
-          transform: rotate(12deg);
+  width: 333px;
+  margin: 100px 70px 0 0;
 }
 
 .content__inner-wrapper .content__img_wrapper {
@@ -909,10 +905,6 @@ body::-webkit-scrollbar {
             flex-direction: column-reverse;
   }
 
-  .footer {
-    /* padding: 120px 0; */
-  }
-
   .content-games__wrapper {
     margin-bottom: 120px;
   }
@@ -924,7 +916,11 @@ body::-webkit-scrollbar {
   }
 
   .content-games {
-    padding: 15px !important;
+    padding: 0 15px !important;
+  }
+
+  .content-games .content__inner-wrapper {
+    padding: 35px 0 5px 0 !important;
   }
 
   .content__inner {
