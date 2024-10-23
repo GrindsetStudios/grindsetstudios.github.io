@@ -1,6 +1,6 @@
 module.exports = function(eleventyConfig) {
     // Копирование статических файлов из указанных папок
-    eleventyConfig.addPassthroughCopy("txt");
+    eleventyConfig.addPassthroughCopy("*.txt");
     eleventyConfig.addPassthroughCopy("css");
     eleventyConfig.addPassthroughCopy("js");
     eleventyConfig.addPassthroughCopy("img");
