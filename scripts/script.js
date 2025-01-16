@@ -43,29 +43,28 @@ testWebP(function (support) {
 async function CountryDefinition() {
     let countryCode = await getCountryCode()
     const style = document.createElement('style');
-    style.textContent = `body [data-country="${countryCode.toLowerCase()}"] {display: block; !important;}`;
+    const userLanguage = navigator.language || navigator.languages[0];
+    style.textContent = `body [data-country="${userLanguage.toLowerCase()}"]`;
+    if(countryCode != null)
+        style.textContent += `, body [data-country="${countryCode.toLowerCase()}"]`;
+    style.textContent += '{display: block; !important;}';
     document.head.appendChild(style);
 }
 
 async function getCountryCode() {
-    // const STORAGE_KEY = 'userCountryCode';
-    // const cachedCode = localStorage.getItem(STORAGE_KEY);
+    const STORAGE_KEY = 'userCountryCode';
+    const cachedCode = localStorage.getItem(STORAGE_KEY);
 
-    // if (cachedCode) {
-    //     return Promise.resolve(cachedCode);
-    // }
+    if (cachedCode) {
+        return Promise.resolve(cachedCode);
+    }
 
     try {
         const response = await fetch('https://ipapi.co/json/');
         const data = await response.json();
-
-        if (data.status === 'success') {
-            const countryCode = data.country_code;
-            // localStorage.setItem(STORAGE_KEY, countryCode);
-            return countryCode;
-        } else {
-            throw new Error('Country code could not be determined');
-        }
+        const countryCode = data.country_code;
+        localStorage.setItem(STORAGE_KEY, countryCode);
+        return countryCode;
     } catch (error) {
         console.error('Error when requesting countryCode:', error);
         return null;
