@@ -97,3 +97,12 @@ body {
 .store img {
     height: 40px;
 }
+
+.yandex-games {
+    background: #00000057;
+    border-radius: 5px;
+}
+
+.yandex-games img {
+    padding: 5px;
+}
