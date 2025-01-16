@@ -1,0 +1,5 @@
+@charset "UTF-8";
+
+body [data-country] {
+    display: none;
+}

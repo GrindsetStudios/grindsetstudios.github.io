@@ -4,8 +4,8 @@ function scrollToTarget(targetId) {
     const offsetPosition = elementPosition - 100;
 
     window.scrollBy({
-         top: offsetPosition,
-         behavior: "smooth"
+        top: offsetPosition,
+        behavior: "smooth"
     });
 }
 
@@ -31,12 +31,45 @@ function testWebP(callback) {
         callback(webP.height == 2);
     };
     webP.src = "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA";
-    }
-    testWebP(function (support) {
+}
+testWebP(function (support) {
     if (support == true) {
         document.querySelector('body').classList.add('webp');
-    }
-    else {
+    } else {
         document.querySelector('body').classList.add('no-webp');
     }
 });
+
+async function CountryDefinition() {
+    let countryCode = await getCountryCode()
+    const style = document.createElement('style');
+    style.textContent = `body [data-country="${countryCode.toLowerCase()}"] {display: block; !important;}`;
+    document.head.appendChild(style);
+}
+
+async function getCountryCode() {
+    // const STORAGE_KEY = 'userCountryCode';
+    // const cachedCode = localStorage.getItem(STORAGE_KEY);
+
+    // if (cachedCode) {
+    //     return Promise.resolve(cachedCode);
+    // }
+
+    try {
+        const response = await fetch('http://ip-api.com/json/');
+        const data = await response.json();
+
+        if (data.status === 'success') {
+            const countryCode = data.countryCode;
+            // localStorage.setItem(STORAGE_KEY, countryCode);
+            return countryCode;
+        } else {
+            throw new Error('Country code could not be determined');
+        }
+    } catch (error) {
+        console.error('Error when requesting countryCode:', error);
+        return null;
+    }
+}
+
+CountryDefinition();
