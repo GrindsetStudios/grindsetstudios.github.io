@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+body {
+    height: auto;
+    overflow: hidden;
+    font-family: "Finlandica-Regular";
+    margin: 0;
+    color: white;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.content {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.content .screenshot {
+    width: 100%;
+    height: 100%;
+    background: url(/img/projects/100Cats/1.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.7;
+    max-width: 1000px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 20px 0px black;
+}
+
+.content .logo {
+    top: 6%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    animation: show 2s ease-out, bounce 6s infinite ease-in-out;
+    animation-delay: 500ms, 2500ms; 
+    transform: translateY(200%);
+}
+
+@keyframes show {
+    0% {
+        transform: translateY(200%)
+    }
+
+    100% {
+        transform: translateY(-5px) rotateZ(-2deg)
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(-5px) rotateZ(-2deg)
+    }
+
+    50% {
+        transform: translateY(10px) rotateZ(1deg)
+    }
+
+    100% {
+        transform: translateY(-5px) rotateZ(-2deg)
+    }
+}
+
+.logo img {
+    width: 85%;
+    max-width: 400px;
+}
+
+.footer {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    padding: 53px 0 30px 0;
+    background: linear-gradient(360deg, white 50%, transparent);
+}
+
+.footer .container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.store {
+    display: inline-block;
+}
+
+.store a {
+    display: inline-block;
+}
+
+.store img {
+    height: 40px;
+}

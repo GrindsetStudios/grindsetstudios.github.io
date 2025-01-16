@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "Finlandica-Bold";
+    font-display: swap;
+    src: url("../fonts/Finlandica-Bold.ttf") format("ttf"), url("../fonts/Finlandica-Bold.woff2") format("woff2");
+    font-weight: initial;
+    font-style: initial;
+  }
+  
+  @font-face {
+    font-family: "Finlandica-Regular";
+    font-display: swap;
+    src: url("../fonts/Finlandica-Regular.ttf") format("ttf"), url("../fonts/Finlandica-Regular.woff2") format("woff2");
+    font-weight: initial;
+    font-style: initial;
+  }
+  
+  @font-face {
+    font-family: "Finlandica-SemiBold";
+    font-display: swap;
+    src: url("../fonts/Finlandica-SemiBold.ttf") format("ttf"), url("../fonts/Finlandica-SemiBold.woff2") format("woff2");
+    font-weight: initial;
+    font-style: initial;
+  }

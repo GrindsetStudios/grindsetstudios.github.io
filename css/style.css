@@ -1,88 +1,5 @@
 @charset "UTF-8";
 
-/*Обнуление*/
-
-* {
-  padding: 0;
-  margin: 0;
-  border: 0;
-}
-
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  font-size: 30px;
-}
-
-:focus,
-:active {
-  outline: none;
-}
-
-a:focus,
-a:active {
-  outline: none;
-}
-
-nav,
-footer,
-header,
-aside {
-  display: block;
-}
-
-html,
-body {
-  height: 100%;
-  width: 100%;
-  line-height: 1;
-  font-size: 14px;
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
-
-input,
-button,
-textarea {
-  font-family: inherit;
-}
-
-input::-ms-clear {
-  display: none;
-}
-
-button {
-  cursor: pointer;
-}
-
-button::-moz-focus-inner {
-  padding: 0;
-  border: 0;
-}
-
-a,
-a:visited {
-  text-decoration: none;
-  color: white;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-ul li {
-  list-style: none;
-}
-
-img {
-  vertical-align: top;
-}
-
-/*--------------------*/
-
 .background-elements {
   position: absolute;
   z-index: -1;
@@ -202,40 +119,6 @@ img {
           transform: translate(-50%, -50%);
   width: 330px;
   height: 178px;
-}
-
-@font-face {
-  font-family: "Finlandica-Bold";
-  font-display: swap;
-  src: url("../fonts/Finlandica-Bold.ttf") format("ttf"), url("../fonts/Finlandica-Bold.woff2") format("woff2");
-  font-weight: initial;
-  font-style: initial;
-}
-
-@font-face {
-  font-family: "Finlandica-Regular";
-  font-display: swap;
-  src: url("../fonts/Finlandica-Regular.ttf") format("ttf"), url("../fonts/Finlandica-Regular.woff2") format("woff2");
-  font-weight: initial;
-  font-style: initial;
-}
-
-@font-face {
-  font-family: "Finlandica-SemiBold";
-  font-display: swap;
-  src: url("../fonts/Finlandica-SemiBold.ttf") format("ttf"), url("../fonts/Finlandica-SemiBold.woff2") format("woff2");
-  font-weight: initial;
-  font-style: initial;
-}
-
-* {
-  scrollbar-width: thin;
-  scrollbar-color: #f6ff00 black;
-}
-
-html {
-  min-height: 100%;
-  height: auto;
 }
 
 body {
