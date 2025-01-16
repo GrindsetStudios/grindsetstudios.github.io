@@ -56,11 +56,11 @@ async function getCountryCode() {
     // }
 
     try {
-        const response = await fetch('http://ip-api.com/json/');
+        const response = await fetch('https://ipapi.co/json/');
         const data = await response.json();
 
         if (data.status === 'success') {
-            const countryCode = data.countryCode;
+            const countryCode = data.country_code;
             // localStorage.setItem(STORAGE_KEY, countryCode);
             return countryCode;
         } else {
