@@ -561,6 +561,7 @@ body {
   flex-wrap: wrap;
   margin-bottom: 220px;
   justify-content: center;
+  gap: 28px;
 }
 
 .content-games__wrapper .content-games {
