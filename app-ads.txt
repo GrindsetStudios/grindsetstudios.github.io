@@ -1288,6 +1288,10 @@ google.com, pub-4956934833576642, DIRECT, f08c47fec0942fa0
 
 
 
+#Appodeal
+google.com, pub-1165868533288337, DIRECT, f08c47fec0942fa0
+facebook.com, 3822508371411671, RESELLER, c3e20eee3f780d68
+
 
 
 #Appodeal
