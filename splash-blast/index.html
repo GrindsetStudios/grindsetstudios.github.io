@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Splash Blast! is a casual block puzzle game on an 8x8 grid with living physics-based bubbles, juicy combos, global color transformations, and Adventure &amp; Classic modes.">
+    <meta property="og:title" content="Splash Blast! — Block Puzzle with Living Bubbles">
+    <meta property="og:description"
+        content="Place shapes made of living bubbles on an 8x8 grid, trigger juicy combos, and experience Adventure &amp; Classic modes.">
+    <meta property="og:image" content="/img/projects/BubbleBlast/feature-landscape.webp">
+    <link rel="shortcut icon" href="/img/icon/heroicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/font.css">
+    <link rel="stylesheet" href="/css/project.css">
+    <title>Splash Blast! — Block Puzzle</title>
+
+    <style>
+        body.splash-blast {
+            background-color: #524cb6;
+        }
+
+        body.splash-blast .content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #524cb6;
+        }
+
+        body.splash-blast .content .poster-wrap {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            padding-bottom: 60px;
+            box-sizing: border-box;
+        }
+
+        body.splash-blast .content .poster {
+            max-width: 100%;
+            max-height: 100%;
+            width: auto;
+            height: auto;
+            display: block;
+            -webkit-mask-image:
+                linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%),
+                linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+            -webkit-mask-composite: source-in;
+            mask-image:
+                linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%),
+                linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+            mask-composite: intersect;
+        }
+
+        body.splash-blast .footer {
+            background: linear-gradient(to top, rgba(40, 34, 102, 0.92) 0%, rgba(82, 76, 182, 0.55) 60%, transparent 100%);
+        }
+    </style>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NWWYD4L9S0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-NWWYD4L9S0');
+    </script>
+</head>
+
+<body class="splash-blast">
+    <section class="content">
+        <picture class="poster-wrap">
+            <source srcset="/img/projects/BubbleBlast/feature-portrait.webp" media="(orientation: portrait)"
+                type="image/webp">
+            <img class="poster" src="/img/projects/BubbleBlast/feature-landscape.webp"
+                alt="Splash Blast! — Block Puzzle with Living Bubbles">
+        </picture>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="store" onclick="gtag('event', 'store', {'name': 'GooglePlay'})">
+                <a href="https://play.google.com/store/apps/details?id=com.GrindsetStudios.BubbleBlast">
+                    <picture>
+                        <source srcset="/img/badges/google-play-badge.webp" type="image/webp">
+                        <img src="/img/badges/google-play-badge.webp" alt="Google Play">
+                    </picture>
+                </a>
+            </div>
+            <div class="store" data-country="ru" onclick="gtag('event', 'store', {'name': 'VKGames'})">
+                <a href="https://vk.ru/app54891237">
+                    <picture>
+                        <source srcset="/img/badges/vk-badge.webp" type="image/webp">
+                        <img src="/img/badges/vk-badge.webp" alt="VK Games">
+                    </picture>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="/scripts/script.js" defer></script>
+</body>
+
+</html>
